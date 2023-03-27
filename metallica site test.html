@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Random Heavy Metal Facts</title>
+    <style>
+      body {
+        text-align: center;
+         background-image: url('https://cdn.shopify.com/s/files/1/1817/9277/products/ironmaidentroopersticker_600x600.jpg?v=1623946589');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        color: white;
+      }
+      #fact {
+        color: black;
+        font-size: 24px;
+        font-weight: bold;
+        border: 3px solid black;
+        padding: 20px;
+        border-radius: 10px;
+        margin: 50px auto;
+        max-width: 600px;
+        background-color: #F2C94C;
+      }
+      button {
+        background-color: black;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      button:hover {
+        background-color: #444;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Random Heavy Metal Facts</h1>
+    <p id="fact"></p>
+    <button onclick="generateFact()">Generate Fact</button>
+    
+    <script>
+      // Array of heavy metal facts
+      var facts = [
+        "Metallica's Black Album is the best-selling album of the SoundScan era, which began in 1991.",
+        "Ozzy Osbourne's real name is John Michael Osbourne.",
+        "Judas Priest's lead singer, Rob Halford, is known as the 'Metal God.'",
+        "Slayer's song 'Angel of Death' is about the infamous Nazi physician Josef Mengele.",
+        "Iron Maiden's mascot, Eddie, has appeared on almost all of the band's album covers.",
+        "Black Sabbath's song 'Iron Man' was inspired by the Marvel Comics character of the same name.",
+        "Guns N' Roses' 'Sweet Child O' Mine' was originally written as a practice riff.",
+        "AC/DC's 'Back in Black' album is the second best-selling album of all time, behind Michael Jackson's 'Thriller.'",
+        "Metallica's song 'One' was inspired by the novel 'Johnny Got His Gun' by Dalton Trumbo.",
+        "KISS has sold over 100 million records worldwide.",
+        "Lemmy Kilmister of Motörhead claimed to have drunk a bottle of Jack Daniel's every day since he was 30.",
+        "The Scorpions' 'Wind of Change' became an anthem of hope and change in the post-Cold War era.",
+        "Randy Rhoads, guitarist for Ozzy Osbourne, died in a plane crash at the age of 25.",
+        "AC/DC's 'Highway to Hell' was Bon Scott's last album with the band before his death.",
+        "Metallica's song 'Enter Sandman' was inspired by a nightmare that drummer Lars Ulrich had.",
+        "Dio, who fronted Rainbow, Black Sabbath, and his own band, Dio, popularized the 'devil horns' hand gesture.",
+        "Pantera's 'Cowboys from Hell' was released in 1990 and helped define the '90s groove metal scene.",
+        "Iron Maiden's Bruce Dickinson is a licensed pilot and has flown the band's touring plane, Ed Force One.",
+        "Mötley Crüe's Tommy Lee and Heather Locklear were married from 1986 to 1993.",
+        "Judas Priest's song 'Breaking the Law' was used in the opening credits of the 2006 film 'Breaking and Entering'."
+      ];
+
+      function generateFact() {
+        var fact = facts[Math.floor(Math.random() * facts.length)];
+        document.getElementById("fact").innerHTML = fact;
+      }
+    </script>
+  </body>
+</html>
